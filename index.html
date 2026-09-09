@@ -25,12 +25,78 @@
   </head>
   <body>
     <div class="page">
-      TESTANDOOOOO asdoaosdoas
-      <header class="header"></header>
+      <header class="header">
+        <!-- 3: nav agora é filha de header -->
+        <nav class="nav">
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="triple expresso"
+            class="nav__logo"
+          />
+          <!-- 2: nav__links continua filha direta de nav -->
+          <ul class="nav__links">
+            <li><a href="#receitas" class="nav__link nav_link">Receitas</a></li>
+            <li>
+              <a href="#reservar" class="nav__link nav_link"
+                >Reservar uma mesa</a
+              >
+            </li>
+            <li><a href="#contatos" class="nav__link nav_link">Contatos</a></li>
+          </ul>
+        </nav>
+
+        <!-- 4 e 13: header__content logo após nav, contendo header__title seguido de header__description -->
+        <div class="header__content">
+          <span class="header__span-accent">Café Especial</span>
+          <h1 class="header__title">na biblioteca Triple Peaks</h1>
+          <p class="header__description">
+            Esta é nossa zona de estudo! Temos aquele cafezinho para energizar
+            você e vibrações aconchegantes para soltar a criatividade.
+          </p>
+        </div>
+
+        <img
+          src="./images/inside_coffee_shop.png"
+          alt="imagem da cafeteria"
+          class="header__image"
+        />
+
+        <div class="header__footer">
+          <p class="header__paragraph">Horários</p>
+          <p class="header__paragraph">Segunda a sexta (10:00 – 19:00)</p>
+          <p class="header__paragraph">Sábado a domingo (11:00 - 18:00)</p>
+          <p class="header__paragraph">
+            200 Success Avenue, a cidade de Triple Peaks
+          </p>
+        </div>
+      </header>
 
       <main class="content">
-        <section class="recipes"></section>
-        <section class="reservation"></section>
+        <!-- 8, 9, 10, 11, 14: recipes preenchida + id -->
+        <section class="recipes" id="recipes">
+          <h2 class="recipes__title">Receitas</h2>
+          <p class="recipes__subtitle">
+            Aprenda a preparar nossos cafés favoritos assistindo aos vídeos
+            abaixo.
+          </p>
+          <div class="recipes__videos">
+            <iframe
+              class="recipes__iframe"
+              src="https://www.youtube.com/embed/exemplo1"
+              title="Receita de café 1"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              class="recipes__iframe"
+              src="https://www.youtube.com/embed/exemplo2"
+              title="Receita de café 2"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+
+        <!-- 15: reservation com id -->
+        <section class="reservation" id="reservation"></section>
       </main>
 
       <footer class="footer"></footer>
