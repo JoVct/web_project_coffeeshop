@@ -26,26 +26,28 @@
   <body>
     <div class="page">
       <header class="header">
-        <!-- 3: nav agora é filha de header -->
         <nav class="nav">
           <img
             src="./images/logo_coffeeshop_dark.svg"
             alt="triple expresso"
             class="nav__logo"
           />
-          <!-- 2: nav__links continua filha direta de nav -->
+
           <ul class="nav__links">
-            <li><a href="#receitas" class="nav__link nav_link">Receitas</a></li>
             <li>
-              <a href="#reservar" class="nav__link nav_link"
+              <a href="#receitas" class="nav__link--receitas">Receitas</a>
+            </li>
+            <li>
+              <a href="#reservar" class="nav__link--reservar"
                 >Reservar uma mesa</a
               >
             </li>
-            <li><a href="#contatos" class="nav__link nav_link">Contatos</a></li>
+            <li>
+              <a href="#contatos" class="nav__link--contatos">Contatos</a>
+            </li>
           </ul>
         </nav>
 
-        <!-- 4 e 13: header__content logo após nav, contendo header__title seguido de header__description -->
         <div class="header__content">
           <span class="header__span-accent">Café Especial</span>
           <h1 class="header__title">na biblioteca Triple Peaks</h1>
@@ -72,8 +74,7 @@
       </header>
 
       <main class="content">
-        <!-- 8, 9, 10, 11, 14: recipes preenchida + id -->
-        <section class="recipes" id="recipes">
+        <section class="recipes" id="#receitas">
           <h2 class="recipes__title">Receitas</h2>
           <p class="recipes__subtitle">
             Aprenda a preparar nossos cafés favoritos assistindo aos vídeos
@@ -95,8 +96,7 @@
           </div>
         </section>
 
-        <!-- 15: reservation com id -->
-        <section class="reservation" id="reservation"></section>
+        <section class="reservation" id="#reservar"></section>
       </main>
 
       <footer class="footer"></footer>
