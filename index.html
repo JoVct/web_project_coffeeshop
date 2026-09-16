@@ -99,7 +99,60 @@
           </div>
         </section>
 
-        <section class="reservation" id="reservation"></section>
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar uma Mesa</h2>
+          <form class="reservation__form form">
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="nome">Nome *</label>
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Nome"
+                id="nome"
+                required
+              />
+              <label class="form__label" for="numeroconvidados"
+                >Número de convidados *</label
+              >
+              <input
+                type="number"
+                id="numeroconvidados"
+                class="form__input"
+                min="1"
+                max="8"
+                placeholder="1-8"
+                required
+              />
+              <label class="form__label" for="data">Data e Hora *</label>
+              <input
+                type="datetime-local"
+                class="form__input"
+                id="data"
+                required
+              />
+              <label class="form__label" for="email">Seu e-mail *</label>
+              <input
+                type="email"
+                class="form__input"
+                placeholder="email@email.com"
+                id="email"
+                required
+              />
+              <label class="form__label" for="termos">
+                <input
+                  type="checkbox"
+                  class="form__checkbox"
+                  id="termos"
+                  required
+                />
+                Eu concordo com os termos de uso</label
+              >
+              <button class="form__button" type="submit">
+                Reservar uma mesa
+              </button>
+            </fieldset>
+          </form>
+        </section>
       </main>
 
       <footer class="footer"></footer>
