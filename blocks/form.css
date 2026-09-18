@@ -1,0 +1,12 @@
+.form-container {
+  padding: 20px;
+  width: 90%;
+  max-width: 80%;
+  max-height: 90%;
+  text-align: center;
+}
+
+.form-container__title {
+  font-size: 40px;
+  font-weight: 700;
+}
