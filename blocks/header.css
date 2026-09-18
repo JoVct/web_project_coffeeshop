@@ -14,12 +14,6 @@ header {
   flex-direction: column;
 }
 
-.texto-noto {
-  font-family: "Noto Serif", serif;
-  font-style: italic;
-  font-weight: 400;
-}
-
 .header__title {
   max-width: 709px;
   margin-top: 114px; /* ver nota abaixo */
