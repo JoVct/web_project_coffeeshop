@@ -28,7 +28,7 @@
 
 .recipes__videos {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 /*não consegui colocar os vídeos no centro e estou com dificuldade para encontrar o erro, por favor, pode me ajudar?*/
