@@ -1,0 +1,47 @@
+.recipes {
+  background-color: #0a2750;
+  background-image: url(/images/background_recipes.svg);
+  background-size: cover;
+}
+
+.recipes__title {
+  margin-left: 80px;
+  max-width: 438px;
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.recipes__subtitle {
+  margin-left: 80px;
+  margin-top: 24px;
+  color: #ffffff;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.recipes__videos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/*não consegui colocar os vídeos no centro e estou com dificuldade para encontrar o erro, por favor, pode me ajudar?*/
+.recipes__iframe {
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.video-caption {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 24px;
+}

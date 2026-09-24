@@ -33,17 +33,17 @@
           />
           <ul class="nav__links">
             <li>
-              <a href="#recipes" class="nav__link nav__link_receitas"
+              <a href="#recipes" class="nav__links nav__link_receitas"
                 >Receitas</a
               >
             </li>
             <li>
-              <a href="#reservation" class="nav__link nav__link_reservar"
+              <a href="#reservation" class="nav__links nav__link_reservar"
                 >Reservar uma mesa</a
               >
             </li>
             <li>
-              <a href="#contatos" class="nav__link nav__link_contatos"
+              <a href="#contatos" class="nav__links nav__link_contatos"
                 >Contatos</a
               >
             </li>
@@ -51,8 +51,8 @@
         </nav>
 
         <h1 class="header__title">
-          na biblioteca Triple Peaks
           <span class="header__span-accent">Café Especial</span>
+          na biblioteca Triple Peaks
         </h1>
         <p class="header__description">
           Esta é nossa zona de estudo! Temos aquele cafezinho para energizar
@@ -69,7 +69,7 @@
           <p class="header__paragraph">Horários</p>
           <p class="header__paragraph">Segunda a sexta (10:00 – 19:00)</p>
           <p class="header__paragraph">Sábado a domingo (11:00 - 18:00)</p>
-          <p class="header__paragraph">
+          <p class="header__paragraph header__sucess">
             200 Success Avenue, a cidade de Triple Peaks
           </p>
         </div>
@@ -83,18 +83,23 @@
             abaixo.
           </p>
           <div class="recipes__videos">
+            <div class="video__item">
+              <iframe
+                class="recipes__iframe"
+                src="https://www.youtube.com/embed/j6VlT_jUVPc?si=ocTEJ6po9CzZ_ngd"
+                title="Receita de café 1"
+                allowfullscreen></iframe></iframe>
+                <p class="video-caption">Receitas Aeropress</p>
+            </div>
+            <div class="video__item">
             <iframe
               class="recipes__iframe"
-              src="https://www.youtube.com/embed/exemplo1"
-              title="Receita de café 1"
-              allowfullscreen
-            ></iframe>
-            <iframe
-              class="recipes__iframe"
-              src="https://www.youtube.com/embed/exemplo2"
+              src="https://www.youtube.com/embed/st571DYYTR8?si=Zyfc-OnhZqAWt65s"
               title="Receita de café 2"
               allowfullscreen
             ></iframe>
+            <p class="video-caption">Receitas de Prensa Francesa</p>
+            </div> 
           </div>
         </section>
 
@@ -137,7 +142,12 @@
                 id="email"
                 required
               />
-              <label class="form__label" for="termos">
+             
+              <button class="form__button" type="submit">
+                Reservar uma mesa
+              </button>
+
+               <label class="form__label" for="termos">
                 <input
                   type="checkbox"
                   class="form__checkbox"
@@ -146,23 +156,18 @@
                 />
                 Eu concordo com os termos de uso</label
               >
-              <button class="form__button" type="submit">
-                Reservar uma mesa
-              </button>
             </fieldset>
           </form>
         </section>
       </main>
 
-      <footer class="footer">
+      <footer class="footer" id="contatos">
         <div class="footer__content">
-          <div class="footer__logo-wrapper">
-            <div class="footer__circle"></div>
-            <img
-              src="../web-project-coffeeshop/images/logo_coffeeshop_light.svg"
-              alt="triple expresso"
-              class="footer__logo"
-            />
+          <div class="footer__logo">
+              
+            
+            <div class="footer__circle"><img src="../web-project-coffeeshop/images/logo_coffeeshop_light.svg" alt="triple expresso"></div>
+           
           </div>
 
           <div class="footer__social">
@@ -190,9 +195,8 @@
               </li>
             </ul>
           </div>
-
-          <p class="footer__copyright">© 2024 João Victor</p>
         </div>
+        <p class="footer__copyright">© 2024 João Victor</p>
       </footer>
     </div>
   </body>

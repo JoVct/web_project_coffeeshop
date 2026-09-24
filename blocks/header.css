@@ -13,15 +13,25 @@ header {
   display: flex;
   flex-direction: column;
 }
-
+.nav__logo {
+  position: relative;
+}
 .header__title {
   max-width: 709px;
-  margin-top: 114px; /* ver nota abaixo */
+  margin-top: 183px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: -1px;
 }
 
 .header__span-accent {
-  font-family: "Noto Serif", "Times New Roman", serif;
+  display: block;
+  font-family: "Noto Serif";
   font-style: italic;
+  font-weight: normal;
   font-size: 58px;
   line-height: 72px;
   color: #2f80ed;
@@ -30,24 +40,42 @@ header {
 .header__description {
   max-width: 683px;
   margin-top: 28px;
-  position: relative;
   z-index: 3;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .header__image {
   position: absolute;
   top: 124px;
   right: 5px;
-  width: 646px;
-  height: 568px;
+  width: 568px;
+  height: 646px;
   object-fit: cover;
 }
-
+/*tentei arrumar como no roteiro, mas não está igual, pode me explicar o que errei, por favor?*/
 .header__footer {
   margin-top: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  gap: 0;
+  justify-content: flex-end;
+  align-items: baseline;
+  flex-direction: column;
+}
+.header__paragraph {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
+}
+
+.header__sucess {
+  align-self: self-end;
 }
 
 .header__hours {
