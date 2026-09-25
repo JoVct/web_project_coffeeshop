@@ -13,9 +13,7 @@ header {
   display: flex;
   flex-direction: column;
 }
-.nav__logo {
-  position: relative;
-}
+
 .header__title {
   max-width: 709px;
   margin-top: 183px;
