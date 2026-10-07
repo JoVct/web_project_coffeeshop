@@ -1,5 +1,5 @@
 .form-container {
-  padding: 20px;
+  padding: 100px center 120px;
   width: 90%;
   max-width: 80%;
   max-height: 90%;
@@ -12,7 +12,8 @@
 }
 
 .form {
-  max-width: 385px 100%;
+  max-width: 385px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -27,7 +28,6 @@
 .form__label {
   color: #000000;
   margin-bottom: 8px;
-  margin-top: 32px;
 }
 
 .form__input {
@@ -37,27 +37,11 @@
   border: 1px solid #838383;
   padding: 15px 20px;
   color: #000000;
+  margin-bottom: 32px;
 }
 
 .form__input::placeholder {
   color: #838383;
-  margin-bottom: 32px;
-}
-
-#nome {
-  margin-bottom: 32px;
-}
-
-#numeroconvidados {
-  margin-bottom: 32px;
-}
-
-#data {
-  margin-bottom: 32px;
-}
-
-#email {
-  margin-bottom: 32px;
 }
 
 .form__label_checkbox {
@@ -76,7 +60,6 @@
   flex-shrink: 0;
 }
 
-/* ===== Botão ===== */
 .form__button {
   border: none;
   border-radius: 4px;
@@ -84,11 +67,15 @@
   color: #ffffff;
   padding: 15px 20px;
   cursor: pointer;
-
-  opacity: 1;
+  margin-bottom: 32px;
   transition: opacity 0.2s ease;
 }
 
 .form__button:hover {
   opacity: 0.7;
+}
+
+.form__label-termos {
+  display: flex;
+  justify-content: center;
 }
